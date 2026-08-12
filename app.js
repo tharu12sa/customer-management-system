@@ -25,6 +25,8 @@ function btnSearchcustomer() {
         return customer.id === document.getElementById("customerId2").value
     });
     document.getElementById("nametxt").innerText = "name : "+ customer.name;
+    document.getElementById("agetxt").innerText = "age : "+ customer.age;
+    document.getElementById("addresstxt").innerText = "address : "+ customer.address;
 }
 
 function btnDeletecustomer() {
