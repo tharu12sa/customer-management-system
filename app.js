@@ -35,7 +35,7 @@ function btnDeletecustomer() {
     let customer = custId.find(customer => {
         return customer.id === document.getElementById("customerId3").value
     });
-    customerList.splice(index, 1);
+    custId.splice(index, 1);
     localStorage.setItem("customerList", JSON.stringify(custId));
 }
 
