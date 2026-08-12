@@ -1,6 +1,7 @@
 const customerList = [];
 
 function btnAddcustomer(){
+    
     alert("hi sudda");
 }
 
