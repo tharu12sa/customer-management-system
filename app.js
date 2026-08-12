@@ -15,3 +15,7 @@ function btnDeletecustomer(){
 function btn2Searchcustomer(){
     alert("search2");
 }
+
+function btnUpdatecustomer(){
+    alert("update");
+}
