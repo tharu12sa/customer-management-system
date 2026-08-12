@@ -11,3 +11,7 @@ function btnSearchcustomer(){
 function btnDeletecustomer(){
     alert("delete");
 }
+
+function btn2Searchcustomer(){
+    alert("search2");
+}
