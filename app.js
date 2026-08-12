@@ -22,8 +22,8 @@ function btnSearchcustomer() {
     //alert("HUu");
     let custId = JSON.parse(localStorage.getItem("customerList"));
     let customer = customerList.find(customer =>{
-        return customer.id === document.getElementById("txtCustomerId").value
-    })
+        return customer.id === document.getElementById("customerId2").value
+    });
 }
 
 function btnDeletecustomer() {
