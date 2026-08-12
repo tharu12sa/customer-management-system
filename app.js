@@ -8,7 +8,7 @@ function btnAddcustomer() {
 
     let customer = {
         id: document.getElementById("customerId").value,
-        Name: document.getElementById("customerName").value,
+        name: document.getElementById("customerName").value,
         age: document.getElementById("customerAge").value,
         address: document.getElementById("customerAddress").value
     }
@@ -20,10 +20,11 @@ function btnAddcustomer() {
 
 function btnSearchcustomer() {
     //alert("HUu");
-    let custId = JSON.parse(localStorage.getItem("customerList"));
+    let customerList = JSON.parse(localStorage.getItem("customerList"));
     let customer = customerList.find(customer =>{
         return customer.id === document.getElementById("customerId2").value
     });
+    document.getElementById("nametxt").innerText = "name :"+ customer.name;
 }
 
 function btnDeletecustomer() {
