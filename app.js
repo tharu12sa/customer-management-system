@@ -1,4 +1,4 @@
-const customerList = [];
+const customerList = JSON.parse(localStorage.getItem("customerList")) || [];
 
 function btnAddcustomer() {
     // let customerId = document.getElementById("customerId").value;
