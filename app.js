@@ -32,7 +32,7 @@ function btnSearchcustomer() {
 function btnDeletecustomer() {
     //alert("delete");
     let custId = JSON.parse(localStorage.getItem("customerList"));
-    let customer = custId.find(customer => {
+    let index= custId.find(customer => {
         return customer.id === document.getElementById("customerId3").value
     });
     custId.splice(index, 1);
