@@ -1,30 +1,39 @@
 const customerList = [];
 
-function btnAddcustomer(){
-    let customerId = document.getElementById("customerId").value;
-    let customerName = document.getElementById("customerName").value;
-    let customerAge = document.getElementById("customerAge").value;
-    let customerAddress = document.getElementById("customerAddress").value;
-    
-    
+function btnAddcustomer() {
+    // let customerId = document.getElementById("customerId").value;
+    // let customerName = document.getElementById("customerName").value;
+    // let customerAge = document.getElementById("customerAge").value;
+    // let customerAddress = document.getElementById("customerAddress").value;
+
+    let customer = {
+        id: document.getElementById("customerId").value,
+        Name: document.getElementById("customerName").value,
+        age: document.getElementById("customerAge").value,
+        address: document.getElementById("customerAddress").value
+    }
+
+    // console.log(customer);
+    customerList.push(customer);
+    localStorage.setItem("customerList", JSON.stringify(customerList));
 }
 
-function btnSearchcustomer(){
+function btnSearchcustomer() {
     alert("HUu");
 }
 
-function btnDeletecustomer(){
+function btnDeletecustomer() {
     alert("delete");
 }
 
-function btn2Searchcustomer(){
+function btn2Searchcustomer() {
     alert("search2");
 }
 
-function btnUpdatecustomer(){
+function btnUpdatecustomer() {
     alert("update");
 }
 
-function btnCleardata(){
+function btnCleardata() {
     alert("Clear");
 }
