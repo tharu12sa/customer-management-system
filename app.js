@@ -20,11 +20,11 @@ function btnAddcustomer() {
 
 function btnSearchcustomer() {
     //alert("HUu");
-    let customerList = JSON.parse(localStorage.getItem("customerList"));
-    let customer = customerList.find(customer =>{
+    let custId = JSON.parse(localStorage.getItem("customerList"));
+    let customer = custId.find(customer =>{
         return customer.id === document.getElementById("customerId2").value
     });
-    document.getElementById("nametxt").innerText = "name :"+ customer.name;
+    document.getElementById("nametxt").innerText = "name : "+ customer.name;
 }
 
 function btnDeletecustomer() {
@@ -40,5 +40,5 @@ function btnUpdatecustomer() {
 }
 
 function btnCleardata() {
-    alert("Clear");
+    localStorage.clear();
 }
