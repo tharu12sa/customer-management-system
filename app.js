@@ -19,7 +19,11 @@ function btnAddcustomer() {
 }
 
 function btnSearchcustomer() {
-    alert("HUu");
+    //alert("HUu");
+    let custId = JSON.parse(localStorage.getItem("customerList"));
+    let customer = customerList.find(customer =>{
+        return customer.id === document.getElementById("txtCustomerId").value
+    })
 }
 
 function btnDeletecustomer() {
