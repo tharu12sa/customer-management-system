@@ -1,8 +1,12 @@
 const customerList = [];
 
 function btnAddcustomer(){
+    let customerId = document.getElementById("customerId").value;
+    let customerName = document.getElementById("customerName").value;
+    let customerAge = document.getElementById("customerAge").value;
+    let customerAddress = document.getElementById("customerAddress").value;
     
-    alert("hi sudda");
+    
 }
 
 function btnSearchcustomer(){
