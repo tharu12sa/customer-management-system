@@ -19,3 +19,7 @@ function btn2Searchcustomer(){
 function btnUpdatecustomer(){
     alert("update");
 }
+
+function btnCleardata(){
+    alert("Clear");
+}
