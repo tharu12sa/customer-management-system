@@ -21,21 +21,22 @@ function btnAddcustomer() {
 function btnSearchcustomer() {
     //alert("HUu");
     let custId = JSON.parse(localStorage.getItem("customerList"));
-    let customer = custId.find(customer =>{
+    let customer = custId.find(customer => {
         return customer.id === document.getElementById("customerId2").value
     });
-    document.getElementById("nametxt").innerText = "name : "+ customer.name;
-    document.getElementById("agetxt").innerText = "age : "+ customer.age;
-    document.getElementById("addresstxt").innerText = "address : "+ customer.address;
+    document.getElementById("nametxt").innerText = "name : " + customer.name;
+    document.getElementById("agetxt").innerText = "age : " + customer.age;
+    document.getElementById("addresstxt").innerText = "address : " + customer.address;
 }
 
 function btnDeletecustomer() {
     //alert("delete");
     let custId = JSON.parse(localStorage.getItem("customerList"));
-    let customer = custId.find(customer =>{
+    let customer = custId.find(customer => {
         return customer.id === document.getElementById("customerId3").value
     });
-
+    customerList.splice(index, 1);
+    localStorage.setItem("customerList", JSON.stringify(custId));
 }
 
 function btn2Searchcustomer() {
