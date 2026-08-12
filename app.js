@@ -7,3 +7,7 @@ function btnAddcustomer(){
 function btnSearchcustomer(){
     alert("HUu");
 }
+
+function btnDeletecustomer(){
+    alert("delete");
+}
