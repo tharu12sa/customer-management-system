@@ -30,7 +30,12 @@ function btnSearchcustomer() {
 }
 
 function btnDeletecustomer() {
-    alert("delete");
+    //alert("delete");
+    let custId = JSON.parse(localStorage.getItem("customerList"));
+    let customer = custId.find(customer =>{
+        return customer.id === document.getElementById("customerId3").value
+    });
+
 }
 
 function btn2Searchcustomer() {
