@@ -39,13 +39,18 @@ function btnDeletecustomer() {
     localStorage.setItem("customerList", JSON.stringify(custId));
 }
 
-function btn2Searchcustomer() {
-    // alert("search2");
-    
-}
 
 function btnUpdatecustomer() {
-    alert("update");
+    // alert("update");
+    let custId = JSON.parse(localStorage.getItem("customerList"));
+    let updatedList = custId.map(customer => customer.id === document.getElementById("customerId4").value ? {
+        id: document.getElementById("customerId4").value,
+        name: document.getElementById("customerName4").value,
+        age: document.getElementById("customerAge4").value,
+        address: document.getElementById("customerAddress4").value
+    } : customer);
+
+    localStorage.setItem("customerList", JSON.stringify(updatedList));
 }
 
 function btnCleardata() {
